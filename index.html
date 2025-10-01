@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            background-color: hsl(0,0%,95%);
+            margin:0;
+            display:flex;
+            flex-direction: column;
+             align-items: center;
+            text-align: center; 
+        }
+        .cityinput{
+            padding:5px;
+            font-size: 2rem;
+            font-weight: bold;
+            border:2px solid hsla(0,0%,20%,0.3);
+            border-radius: 10px;
+            margin:10px;
+        }
+        button{
+            background-color: hsl(122,39%,50%);
+            border:none;
+            color:white;
+            padding:10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 2rem;
+            cursor:pointer;
+
+        }
+        button:hover{
+            background-color: hsl(122,39%,40%);
+        }
+        .card
+        {
+            background: linear-gradient(180deg,hsl(210,100%,75%),hsl(40,100%,75%));
+            padding:10px;
+            box-shadow:2px 2px 5px hsla(0,0%,0%,0.5);
+            min-width:300px;
+            max-height:500px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+        h1 
+        {
+            font-size:3.5rem;
+            margin-top: 0;
+             margin-bottom: 25px;
+        }
+        p{
+            font-size: 1.5rem;
+            margin:5px 0;
+        }
+        .citydisplay,.tempdisplay{
+            font-size: 3.5rem;
+            font-weight: bold;
+            color:hsla(0,0%,0%,0.75);
+        }
+        .humidity
+        {
+            font-weight:bold;
+            margin-bottom: 25px;
+        }
+        .descdisplay
+        {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .weatheremoji{
+            margin:0;
+            font-size:7.5rem;
+             
+        }
+        .errordisplay{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color:black;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <form class="weatherapp">
+    <input type="text" class="cityinput" placeholder="enter city name">
+    <button type="submit">get weather</button>
+    </form>
+    <div class="card" style="display:none">
+        <!-- <h1 class="citydisplay">mimai</h1>
+        <p class="tempdisplay">90</p>
+        <p class="humidity">humidity: 75%</p>
+        <p class="descdisplay">clear skies</p>
+        <p class="weatheremoji">☀️</p>
+        <p class="errordisplay">please enter a city</p> -->
+    </div>
+    <script src="weatherapp.js"></script>
+</body>
+</html>
